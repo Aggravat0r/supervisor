@@ -1,0 +1,104 @@
+O:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\bin\Debug\Первая проба.exe
+O:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\bin\Debug\Первая проба.pdb
+O:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\ResolveAssemblyReference.cache
+O:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\Первая_проба.Form1.resources
+O:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\Первая_проба.Properties.Resources.resources
+O:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\GenerateResource.read.1.tlog
+O:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\GenerateResource.write.1.tlog
+O:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\Первая проба.exe
+O:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\Первая проба.pdb
+I:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\Первая проба.exe
+I:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\Первая проба.pdb
+I:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\bin\Debug\Первая проба.exe
+I:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\bin\Debug\Первая проба.pdb
+I:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\ResolveAssemblyReference.cache
+I:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\Первая_проба.Form1.resources
+I:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\Первая_проба.Properties.Resources.resources
+I:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\GenerateResource.read.1.tlog
+I:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\Первая проба.exe
+E:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\Первая проба.pdb
+E:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\bin\Debug\Первая проба.exe
+E:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\bin\Debug\Первая проба.pdb
+E:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\Первая_проба.Form1.resources
+E:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\Первая_проба.Properties.Resources.resources
+E:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\GenerateResource.write.1.tlog
+G:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\Первая проба.exe
+G:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\Первая проба.pdb
+G:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\bin\Debug\Первая проба.exe
+G:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\bin\Debug\Первая проба.pdb
+G:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\Первая_проба.Form1.resources
+G:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\Первая_проба.Properties.Resources.resources
+G:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\GenerateResource.read.1.tlog
+G:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\GenerateResource.write.1.tlog
+O:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\Первая_проба.Identificate.resources
+G:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\Первая_проба.Identificate.resources
+J:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\Первая проба.exe
+J:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\Первая проба.pdb
+J:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\bin\Debug\Первая проба.exe
+J:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\bin\Debug\Первая проба.pdb
+J:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\ResolveAssemblyReference.cache
+J:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\Первая_проба.Form1.resources
+J:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\Первая_проба.Identificate.resources
+J:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\Первая_проба.Properties.Resources.resources
+J:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\GenerateResource.read.1.tlog
+J:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Новая папка2\3 курс. Лабы\Курсач ОС\Первая проба\Первая проба\obj\x86\Debug\Первая_проба.Identificate.resources
+C:\Users\Анна\Desktop\Курсач ОС_4\Первая проба\Первая проба\obj\x86\Debug\Первая проба.exe
+C:\Users\Анна\Desktop\Курсач ОС_4\Первая проба\Первая проба\obj\x86\Debug\Первая проба.pdb
+C:\Users\Анна\Desktop\Курсач ОС_4\Первая проба\Первая проба\bin\Debug\Первая проба.exe
+C:\Users\Анна\Desktop\Курсач ОС_4\Первая проба\Первая проба\bin\Debug\Первая проба.pdb
+C:\Users\Анна\Desktop\Курсач ОС_4\Первая проба\Первая проба\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Анна\Desktop\Курсач ОС_4\Первая проба\Первая проба\obj\x86\Debug\Первая_проба.Form1.resources
+C:\Users\Анна\Desktop\Курсач ОС_4\Первая проба\Первая проба\obj\x86\Debug\Первая_проба.Identificate.resources
+C:\Users\Анна\Desktop\Курсач ОС_4\Первая проба\Первая проба\obj\x86\Debug\Первая_проба.Properties.Resources.resources
+C:\Users\Анна\Desktop\Курсач ОС_4\Первая проба\Первая проба\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Анна\Desktop\Курсач ОС_4\Первая проба\Первая проба\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Анна\Desktop\Курсач ОС\Курсач ОС_4\Первая проба\Первая проба\obj\x86\Debug\Первая проба.exe
+C:\Users\Анна\Desktop\Курсач ОС\Курсач ОС_4\Первая проба\Первая проба\obj\x86\Debug\Первая проба.pdb
+C:\Users\Анна\Desktop\Курсач ОС_5\Курсач ОС_4\Первая проба\Первая проба\obj\x86\Debug\Первая проба.exe
+C:\Users\Анна\Desktop\Курсач ОС_5\Курсач ОС_4\Первая проба\Первая проба\obj\x86\Debug\Первая проба.pdb
+C:\Users\Анна\Desktop\Курсач ОС_6\Курсач ОС_4\Первая проба\Первая проба\obj\x86\Debug\Первая проба.exe
+C:\Users\Анна\Desktop\Курсач ОС_6\Курсач ОС_4\Первая проба\Первая проба\obj\x86\Debug\Первая проба.pdb
+C:\Users\Анна\Desktop\Курсач ОС_6\Курсач ОС_4\Первая проба\Первая проба\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Анна\Desktop\Курсач ОС_6\Курсач ОС_4\Первая проба\Первая проба\obj\x86\Debug\Первая_проба.Form1.resources
+C:\Users\Анна\Desktop\Курсач ОС_6\Курсач ОС_4\Первая проба\Первая проба\obj\x86\Debug\Первая_проба.Identificate.resources
+C:\Users\Анна\Desktop\Курсач ОС_6\Курсач ОС_4\Первая проба\Первая проба\obj\x86\Debug\Первая_проба.Properties.Resources.resources
+C:\Users\Анна\Desktop\Курсач ОС_6\Курсач ОС_4\Первая проба\Первая проба\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Анна\Desktop\Курсач ОС_6\Курсач ОС_4\Первая проба\Первая проба\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Анна\Desktop\Курсач ОС_6\Курсач ОС_4\Первая проба\Первая проба\bin\Debug\Первая проба.exe
+C:\Users\Анна\Desktop\Курсач ОС_6\Курсач ОС_4\Первая проба\Первая проба\bin\Debug\Первая проба.pdb
+C:\Users\Анна\Desktop\Курсач ОС_7\Курсач ОС_4\Первая проба\Первая проба\obj\x86\Debug\Первая проба.exe
+C:\Users\Анна\Desktop\Курсач ОС_7\Курсач ОС_4\Первая проба\Первая проба\obj\x86\Debug\Первая проба.pdb
+C:\Users\Анна\Desktop\Курсач ОС_7\Курсач ОС_4\Первая проба\Первая проба\bin\Debug\Первая проба.exe
+C:\Users\Анна\Desktop\Курсач ОС_7\Курсач ОС_4\Первая проба\Первая проба\bin\Debug\Первая проба.pdb
+C:\Users\Анна\Desktop\Курсач ОС_7\Курсач ОС_4\Первая проба\Первая проба\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Анна\Desktop\Курсач ОС_7\Курсач ОС_4\Первая проба\Первая проба\obj\x86\Debug\Первая_проба.Form1.resources
+C:\Users\Анна\Desktop\Курсач ОС_7\Курсач ОС_4\Первая проба\Первая проба\obj\x86\Debug\Первая_проба.Identificate.resources
+C:\Users\Анна\Desktop\Курсач ОС_7\Курсач ОС_4\Первая проба\Первая проба\obj\x86\Debug\Первая_проба.Properties.Resources.resources
+C:\Users\Анна\Desktop\Курсач ОС_7\Курсач ОС_4\Первая проба\Первая проба\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Анна\Desktop\Курсач ОС_7\Курсач ОС_4\Первая проба\Первая проба\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Анна\Desktop\Курсач ОС_8\Первая проба\Первая проба\obj\x86\Debug\Первая проба.exe
+C:\Users\Анна\Desktop\Курсач ОС_8\Первая проба\Первая проба\obj\x86\Debug\Первая проба.pdb
+C:\Users\Анна\Desktop\Курсач ОС_8\Первая проба\Первая проба\bin\Debug\Первая проба.exe
+C:\Users\Анна\Desktop\Курсач ОС_8\Первая проба\Первая проба\bin\Debug\Первая проба.pdb
+C:\Users\Анна\Desktop\Курсач ОС_8\Первая проба\Первая проба\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Анна\Desktop\Курсач ОС_8\Первая проба\Первая проба\obj\x86\Debug\Первая_проба.Form1.resources
+C:\Users\Анна\Desktop\Курсач ОС_8\Первая проба\Первая проба\obj\x86\Debug\Первая_проба.Identificate.resources
+C:\Users\Анна\Desktop\Курсач ОС_8\Первая проба\Первая проба\obj\x86\Debug\Первая_проба.Properties.Resources.resources
+C:\Users\Анна\Desktop\Курсач ОС_8\Первая проба\Первая проба\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Анна\Desktop\Курсач ОС_8\Первая проба\Первая проба\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\G.Y\Desktop\курсачи\Final\Первая проба\Первая проба\obj\x86\Debug\Первая проба.exe
+C:\Users\G.Y\Desktop\курсачи\Final\Первая проба\Первая проба\obj\x86\Debug\Первая проба.pdb
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\OC\Первая проба\obj\x86\Debug\Первая проба.exe
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\OC\Первая проба\obj\x86\Debug\Первая проба.pdb
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\OC\Первая проба\bin\Debug\Первая проба.exe
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\OC\Первая проба\bin\Debug\Первая проба.pdb
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\OC\Первая проба\obj\x86\Debug\Первая проба.csprojResolveAssemblyReference.cache
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\OC\Первая проба\obj\x86\Debug\Первая_проба.Form1.resources
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\OC\Первая проба\obj\x86\Debug\Первая_проба.Identificate.resources
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\OC\Первая проба\obj\x86\Debug\Первая_проба.Properties.Resources.resources
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\OC\Первая проба\obj\x86\Debug\Первая проба.csproj.GenerateResource.Cache

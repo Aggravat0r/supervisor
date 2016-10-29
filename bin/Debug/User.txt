@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfUser xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <User>
+    <user_id>1</user_id>
+    <user_name>admin</user_name>
+    <password>admin</password>
+    <p_user_id>1</p_user_id>
+    <p_user_name>admin</p_user_name>
+    <p_password>admin</p_password>
+  </User>
+  <User>
+    <user_id>2</user_id>
+    <user_name>user</user_name>
+    <password>user</password>
+    <p_user_id>2</p_user_id>
+    <p_user_name>user</p_user_name>
+    <p_password>user</p_password>
+  </User>
+  <User>
+    <user_id>3</user_id>
+    <user_name>user2</user_name>
+    <password>user2</password>
+    <p_user_id>3</p_user_id>
+    <p_user_name>user2</p_user_name>
+    <p_password>user2</p_password>
+  </User>
+</ArrayOfUser>

@@ -1,0 +1,140 @@
+﻿Д.2 Листинг файлов реализации межпроцессного взаимодействия
+proc.h
+#ifndef PROC_H
+#define PROC_H
+#define PAGE_SIZE 128
+#define PAGE_NUM 32
+#define SEM_NUM 3
+#define MAX_WR 1
+#define MAX_RD 10
+#define IPC_CREATE 4
+#define IPC_OPEN 1
+#define IPC_SET 2
+#define IPC_RMD 3
+#define SEM_WR 1
+#define SEM_RD 2
+#define SEM_C 3
+
+/*stryktyra elementa tablici stranic pamjati*/
+#define st_one_semafor struct str_sem
+st_one_semafor
+{int sid,  /*identifikator semafora*/
+     val;  /*znachenie semafora*/
+};
+
+/*stryktyra 1 stranici pamjati*/
+#define st_one_page struct str_page
+st_one_page
+{int id,   /*identifikator stranici*/
+     pid,  /*id processa-vladelca*/
+     lock; /*priznak zanjatosti*/
+};
+
+//Prototipi fynkcij
+int semget(int sid, int flag);
+int semop(int desc, int op);
+int semctl(int desc, int cmd, str_sem arg);
+void shmat(int desc, int pid);
+void shmdt(int desc);
+int shmget(int pid, int flag);
+void reconstruct(int index, int count_blok);
+#endif
+
+sem_and_shm.cpp
+#include "proc.h"
+#include <stdio.h>
+
+str_sem sem[SEM_NUM];
+str_page shm[PAGE_NUM];
+//--------semafori--------------------------------
+/*otkrit nabor semaforov*/
+int semget(int sid, int flag)
+{int i;
+ if ((flag!=IPC_CREATE) && (flag!=IPC_OPEN))
+  {puts("Incorrect flag in semget"); return -1;}
+ if (flag==IPC_CREATE)
+  {for(i=0; i<SEM_NUM; i++)
+    if (!sem[i].sid)
+     {sem[i].sid=sid;
+      return i;
+     }
+    puts("Can not create semafor. No space.");
+    return -1;
+   }
+  else
+   {for(i=0; i<SEM_NUM; i++)
+     if (sem[i].sid==sid) return i;
+    puts("This semafor no exists");
+    return -1;
+   }
+}
+
+/*vipolnit operaciu s semaforom*/
+int semop(int desc, int op)
+{if (desc<0 || desc>=SEM_NUM)
+  {puts("Incorrect desk in semop."); return -1;}
+ sem[desc].val += op;
+ if (sem[desc].val>0) return 0; /*yspex*/
+ else return -1;
+}
+
+/*ypravlenie semaforom*/
+int semctl(int desc, int cmd, str_sem arg)
+{int correct_arg(str_sem);
+ if ((cmd!=IPC_RMD) && (cmd!=IPC_SET))
+  {puts("Incorrect cmd in semctl."); return -1;}
+ if (desc<0 || desc>=SEM_NUM)
+  {puts("Incorrect desk in semctl."); return -1;}
+ if (cmd==IPC_RMD)
+  {sem[desc].sid=0;
+   sem[desc].val=0;
+   return 0; /*yspex*/
+  }
+ else
+  if (correct_arg(arg))
+   {sem[desc]=arg;
+    return 0; /*yspex*/
+   }
+  else
+   {puts("Incorrect arg in semctl."); return -1;}
+}
+
+/*proverka korrektnosti*/
+int correct_arg(str_sem arg)
+{ if ((arg.sid==SEM_RD) || (arg.sid==SEM_WR)
+       || (arg.sid==SEM_C))
+  return 1;     /*korrektno*/
+  else return 0;
+}
+
+//-----------razdeljaemaja pamjat'------------------------
+/*sozdat ili otkrit*/
+int shmget(int pid/*, int size*/, int flag)
+{int i;
+ if ((flag!=IPC_CREATE) && (flag!=IPC_OPEN))
+  {puts("Incorrect flag in shmget"); return -1;}
+ if (flag==IPC_CREATE)
+   {for(i=0; i<PAGE_NUM; i++)
+     if(!shm[i].lock) break; // s i-togo bloka stranici svobodni
+    if(i==PAGE_NUM)
+     {puts("Incorrect pid in shmget"); return -1;}
+    return i;
+    }
+ else //IPC_OPEN
+  {for(i=0; i<PAGE_NUM; i++)
+    if (shm[i].pid==pid) break;
+   if(i==PAGE_NUM)
+    {puts("Incorrect pid in shmget"); return -1;}
+   return i; /*yspex*/
+  }
+}
+
+/*prisoedeit oblast' pamjati*/
+void shmat(int desc, int pid)
+{if (desc<0 || desc>=PAGE_NUM)
+  {puts("Incorrect desk in shmat.");
+   return;
+   }
+ shm[desc].pid=pid;
+ shm[desc].lock=1;
+}

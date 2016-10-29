@@ -1,0 +1,27 @@
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\OC\Первая проба\obj\x86\Debug\Первая проба.exe
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\OC\Первая проба\obj\x86\Debug\Первая проба.pdb
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\OC\Первая проба\obj\x86\Debug\Первая_проба.Properties.Resources.resources
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\OC\Первая проба\obj\x86\Debug\OC.csproj.GenerateResource.Cache
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\OC\Первая проба\bin\Debug\Первая проба.exe
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\OC\Первая проба\bin\Debug\Первая проба.pdb
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\OC\Первая проба\obj\x86\Debug\OC.Form1.resources
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\OC\Первая проба\obj\x86\Debug\OC.Identificate.resources
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\OC\Первая проба\obj\x86\Debug\OC.csprojResolveAssemblyReference.cache
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\OC\Курсовой\obj\x86\Debug\Первая проба.exe
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\OC\Курсовой\obj\x86\Debug\Первая проба.pdb
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\OC\Курсовой\bin\Debug\Первая проба.exe
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\OC\Курсовой\bin\Debug\Первая проба.pdb
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\OC\Курсовой\obj\x86\Debug\OC.csprojResolveAssemblyReference.cache
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\OC\Курсовой\obj\x86\Debug\OC.Form1.resources
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\OC\Курсовой\obj\x86\Debug\OC.Identificate.resources
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\OC\Курсовой\obj\x86\Debug\Первая_проба.Properties.Resources.resources
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\OC\Курсовой\obj\x86\Debug\OC.csproj.GenerateResource.Cache
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\Курсовой\obj\x86\Debug\Первая проба.exe
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\Курсовой\obj\x86\Debug\Первая проба.pdb
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\Курсовой\bin\Debug\Первая проба.exe
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\Курсовой\bin\Debug\Первая проба.pdb
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\Курсовой\obj\x86\Debug\OC.csprojResolveAssemblyReference.cache
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\Курсовой\obj\x86\Debug\OC.Form1.resources
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\Курсовой\obj\x86\Debug\OC.Identificate.resources
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\Курсовой\obj\x86\Debug\Первая_проба.Properties.Resources.resources
+C:\Users\Анатолий\YandexDisk\Учеба\Курс 3\Операционные системы\Курсовой\Курсовой\obj\x86\Debug\OC.csproj.GenerateResource.Cache
