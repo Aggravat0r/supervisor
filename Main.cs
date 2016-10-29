@@ -130,7 +130,7 @@ namespace OC
                                     {
                                         if (Main.Sess.user_name == "admin")
                                         {
-                                            function_user.reset_pass(Program.myForm.Command.Text);
+                                            function_user.resetPass(Program.myForm.Command.Text);
                                         } else
                                         {
                                             Program.myForm.Log.Text += "Для изменения пароля учетной записи нужны права администратора!\n\n";
