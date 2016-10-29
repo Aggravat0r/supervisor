@@ -45,7 +45,9 @@ namespace OC
                 //Передаем команду для обработки
                 Sys1.MainMenu();
                 //Добавляем команду в историю команд
+                prev_comm.Remove("");
                 prev_comm.Add(Program.myForm.Command.Text);
+                prev_comm.Add("");
                 num_comm = prev_comm.Count - 1;
                 //Очищаем поле
                 Program.myForm.Command.Text = "";
@@ -73,7 +75,7 @@ namespace OC
 
         private void Record(object sender, KeyEventArgs e)
         {
-            //Ввода в консоль для записи в файл
+            //Ввод в консоль для записи в файл
             if ((e.KeyCode == Keys.Escape) && (record != null))
             {
                 if (Program.myForm.Log.Text != "") {
