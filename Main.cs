@@ -212,7 +212,7 @@ namespace OC
                                     }
                                     break;
                                 }
-                                case "dell_file":
+                                case "del_file":
                                 {
                                     Regex regex_d = new Regex(@"^(?<command>[A-Za-z_]+)[ ](?<fil>[A-Za-z0-9]+)");
                                     matches = regex_d.Match(Program.myForm.Command.Text);
