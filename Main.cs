@@ -106,17 +106,35 @@ namespace OC
 //--------------------------------------- пользователи
                                 case "create_user":
                                     {
-                                        function_user.Create_user(Program.myForm.Command.Text);
+                                        if (Main.Sess.user_name == "admin")
+                                        {
+                                            function_user.Create_user(Program.myForm.Command.Text);
+                                        } else
+                                        {
+                                            Program.myForm.Log.Text += "Для добавления учетной записи нужны права администратора!\n\n";
+                                        }
                                         break;
                                     }
                                 case "delete_user":
                                     {
-                                        function_user.Delete_user(Program.myForm.Command.Text);
+                                        if (Main.Sess.user_name == "admin")
+                                        {
+                                            function_user.Delete_user(Program.myForm.Command.Text);
+                                        } else
+                                        {
+                                            Program.myForm.Log.Text += "Для удаления учетной записи нужны права администратора!\n\n";
+                                        }
                                         break;
                                     }
                                 case "reset_pass":
                                     {
-                                        function_user.reset_pass(Program.myForm.Command.Text);
+                                        if (Main.Sess.user_name == "admin")
+                                        {
+                                            function_user.reset_pass(Program.myForm.Command.Text);
+                                        } else
+                                        {
+                                            Program.myForm.Log.Text += "Для изменения пароля учетной записи нужны права администратора!\n\n";
+                                        }
                                         break;
                                     }
 //--------------------------------------- папки
