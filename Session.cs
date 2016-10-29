@@ -48,7 +48,7 @@ namespace OC
                 StreamWriter file = new StreamWriter(sw);
                 writer.Serialize(file, t);
                 file.Close();
-                Program.myForm.Log.Text += "\n\nСписок пользователей успешно сериализован в файл " + path + "\nОперация выполнена\n";
+                //Program.myForm.Log.Text += "\n\nСписок пользователей успешно сериализован в файл " + path + "\nОперация выполнена\n";
             }
             catch (Exception ex)
             {
