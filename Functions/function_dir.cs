@@ -22,30 +22,38 @@ namespace OC
             f.attributes.dimode.type = "folder";
             f.attributes.dimode.rights = "rw---";
 
-            // cоздание папки по пути
-            string[] path_l = path.Split('/');
-            catalog temp = new catalog();
-            temp.attributes = Main.Root.attributes;
-            temp.name = Main.Root.name;
-            temp.List = Main.Root.List;
-
-            for (int i = 0; i < path_l.Count() - 1; i++)
+            //Если директории с таким именем еще нет, то создаем, иначе оповещаем пользователя
+            if (function_dir.Search_folder(name, path) == "root/")
             {
-                temp.name = path_l[i];
-                for (int j = 0; j < temp.List.Count; j++)
+                // cоздание папки по пути
+                string[] path_l = path.Split('/');
+                catalog temp = new catalog();
+                temp.attributes = Main.Root.attributes;
+                temp.name = Main.Root.name;
+                temp.List = Main.Root.List;
+
+                for (int i = 0; i < path_l.Count() - 1; i++)
                 {
-                    if ((temp.List[j].name == path_l[i]) && (i != path_l.Count()))
+                    temp.name = path_l[i];
+                    for (int j = 0; j < temp.List.Count; j++)
                     {
-                        temp.attributes = temp.List[j].attributes;
-                        temp.name = temp.List[j].name;
-                        catalog ab = (catalog)temp.List[j];
-                        temp.List = ab.List;
+                        if ((temp.List[j].name == path_l[i]) && (i != path_l.Count()))
+                        {
+                            temp.attributes = temp.List[j].attributes;
+                            temp.name = temp.List[j].name;
+                            catalog ab = (catalog)temp.List[j];
+                            temp.List = ab.List;
+                        }
                     }
                 }
+                temp.List.Add(f);
+                //Main.Sess.path = Main.Sess.path + f.name + "/";
+                Program.myForm.Log.Text += "Папка '" + f.name + "' создана \n\n";
             }
-            temp.List.Add(f);
-            //Main.Sess.path = Main.Sess.path + f.name + "/";
-            Program.myForm.Log.Text += "Папка '" + f.name + "' создана \n\n";
+            else
+            {
+                Program.myForm.Log.Text += "Папка с именем '" + f.name + "' уже существует!\n\n";
+            }
         }
 
         public static string Search_folder(string name, string path)
