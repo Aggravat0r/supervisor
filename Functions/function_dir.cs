@@ -122,7 +122,10 @@ namespace OC
                     }
                 }
             }
+            //Флаг для обнаружения успешного выполнения
+            bool isset = false;
             for (int i = 0; i < temp.List.Count; i++)
+            {
                 //Если нашли файл, который нужно переименовать, и если учетная запись админа 
                 //или если создателю можно переименовывать, или если другим пользователям можно переименовывать
                 if ((temp.List[i].name == path_l[path_l.Count() - 2]) &&
@@ -137,13 +140,22 @@ namespace OC
                         result = "Файл успешно переименован\n\n";
                     }
                     temp.List[i].name = rname;
+
+                    isset = true;
                     Program.myForm.Log.Text += result;
-                } else if(temp.List[i].name == path_l[path_l.Count() - 2])
+                }
+                else if (temp.List[i].name == path_l[path_l.Count() - 2])
                 {
+                    isset = true;
                     if (temp.List[i].attributes.dimode.type == "file")
                         Program.myForm.Log.Text += "У вас нет прав на переименование этого файла!\nВы не являетесь владельцем данного файла.\n\n";
                     else Program.myForm.Log.Text += "У вас нет прав на переименование этой директории!\nВы не являетесь владельцем данной директории.\n\n";
                 }
+            }
+            if (!isset)
+            {
+                Program.myForm.Log.Text += "Данной директории или файла не существует!\n\n";
+            }
         }
 
         public static void Dell_folder(string path, string delname)
@@ -168,6 +180,8 @@ namespace OC
                     }
                 }
             }
+            //Флаг для обнаружения успешного выполнения
+            bool isset = false;
             for (int i = 0; i < temp.List.Count; i++)
             {
                 //if (temp.List[i].name.Equals(delname))
@@ -192,15 +206,20 @@ namespace OC
                         temp.List[i].attributes.di_addr[j] = 0;
                     }
                     temp.List.RemoveAt(i);
+                    isset = true;
                     Program.myForm.Log.Text += result;
                 }
                 else if (temp.List[i].name.Equals(delname)) {
+                    isset = true;
                     if (temp.List[i].attributes.dimode.type == "file")
                         Program.myForm.Log.Text += "У вас нет прав на удаление этого файла!\nВы не являетесь владельцем данного файла.\n\n";
                     else Program.myForm.Log.Text += "У вас нет прав на удаление этой директории!\nВы не являетесь владельцем данной директории.\n\n";
                 }
             }
-
+            if (!isset)
+            {
+                Program.myForm.Log.Text += "Данной директории или файла не существует!\n\n";
+            }
         }
     }
 }
