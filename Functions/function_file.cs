@@ -22,29 +22,37 @@ namespace OC
             f.attributes.di_addr[0] = function_inode.Search_free_cluster();
             function_inode.SetFalse(f.attributes.di_addr[0]);
 
-            // cоздание папки по пути
-            string[] path_l = path.Split('/');
-            catalog temp = new catalog();
-            temp.attributes = Main.Root.attributes;
-            temp.name = Main.Root.name;
-            temp.List = Main.Root.List;
-
-            for (int i = 0; i < path_l.Count() - 1; i++)
+            //Если файл с таким именем еще нет, то создаем, иначе оповещаем пользователя
+            if (!Is_file(name, path))
             {
-                temp.name = path_l[i];
-                for (int j = 0; j < temp.List.Count; j++)
+                // cоздание папки по пути
+                string[] path_l = path.Split('/');
+                catalog temp = new catalog();
+                temp.attributes = Main.Root.attributes;
+                temp.name = Main.Root.name;
+                temp.List = Main.Root.List;
+
+                for (int i = 0; i < path_l.Count() - 1; i++)
                 {
-                    if ((temp.List[j].name == path_l[i]) && (i != path_l.Count()))
+                    temp.name = path_l[i];
+                    for (int j = 0; j < temp.List.Count; j++)
                     {
-                        temp.attributes = temp.List[j].attributes;
-                        temp.name = temp.List[j].name;
-                        catalog ab = (catalog)temp.List[j];
-                        temp.List = ab.List;
+                        if ((temp.List[j].name == path_l[i]) && (i != path_l.Count()))
+                        {
+                            temp.attributes = temp.List[j].attributes;
+                            temp.name = temp.List[j].name;
+                            catalog ab = (catalog)temp.List[j];
+                            temp.List = ab.List;
+                        }
                     }
                 }
+                temp.List.Add(f);
+                Program.myForm.Log.Text += "Файл '" + name + "' создан \n\n";
             }
-            temp.List.Add(f);
-            Program.myForm.Log.Text += "Файл '" + name + "' создан \n\n";
+            else
+            {
+                Program.myForm.Log.Text += "Файл с именем '" + f.name + "' уже существует!\n\n";
+            }
         }
         public static void modify_file(file f, string text = "")
         {
