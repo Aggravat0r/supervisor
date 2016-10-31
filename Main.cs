@@ -196,7 +196,7 @@ namespace OC
                                         }
                                         break;
                                     }
-                                case "dell_dir":
+                                case "del_dir":
                                 {
                                     Regex regex_d = new Regex(@"^(?<command>[A-Za-z_]+)[ ](?<folder>[A-Za-z0-9]+)");
                                     matches = regex_d.Match(Program.myForm.Command.Text);
