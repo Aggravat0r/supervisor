@@ -70,15 +70,39 @@ namespace OC
             for (int i = 0; i < path_l.Count() - 1; i++)
             {
                 temp.name = path_l[i];
+                //Перебор внутренних директорий
                 for (int j = 0; j < temp.List.Count; j++)
                 {
+                    //Если нашли нужную директорию...
                     if ((temp.List[j].name == path_l[i]) && (i != path_l.Count()))
                     {
-                        path_res += temp.List[j].name + "/";
-                        temp.attributes = temp.List[j].attributes;
-                        temp.name = temp.List[j].name;
-                        catalog ab = (catalog)temp.List[j];
-                        temp.List = ab.List;
+                        //Если мы алминистратор, или мы создатель и нам разрешено чтение и просмотр, 
+                        //или если другим пользователям разрешено чтение и просмотр...
+                        if (
+                            (
+                                (Main.Sess.user_name == "admin") ||
+                                (
+                                    (temp.List[j].attributes.di_uid == Main.Sess.user_name) && 
+                                    (function_inode.rights_for_all(temp.List[j])[0]) && 
+                                    (function_inode.rights_for_all(temp.List[j])[1])
+                                ) ||
+                                (
+                                    (function_inode.rights_for_all(temp.List[j])[2]) && 
+                                    (function_inode.rights_for_all(temp.List[j])[3])
+                                )
+                            )
+                        )
+                        {
+                            path_res += temp.List[j].name + "/";
+                            temp.attributes = temp.List[j].attributes;
+                            temp.name = temp.List[j].name;
+                            catalog ab = (catalog)temp.List[j];
+                            temp.List = ab.List;
+                        }
+                        else
+                        {
+                            Program.myForm.Log.Text += "У вас не прав для просмотра или редактирования данного каталога!\n\n";
+                        }
                     }
                 }
             }
