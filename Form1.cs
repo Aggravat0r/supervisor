@@ -60,12 +60,16 @@ namespace OC
                 num_comm--;
                 if (num_comm < 0) num_comm = prev_comm.Count - 1;
                 Program.myForm.Command.Text = prev_comm[num_comm];
+                //Устанавливаем курсор в конец
+                Program.myForm.Command.SelectionStart = Program.myForm.Command.Text.Length;
             }
             else if (e.KeyCode == Keys.Down)
             {
                 num_comm++;
                 if (num_comm >= prev_comm.Count) num_comm = 0;
                 Program.myForm.Command.Text = prev_comm[num_comm];
+                //Устанавливаем курсор в конец
+                Program.myForm.Command.SelectionStart = Program.myForm.Command.Text.Length;
             }
         }
         private void Command_TextChanged(object sender, EventArgs e)
