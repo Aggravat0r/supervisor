@@ -79,15 +79,22 @@ namespace OC
             if (matches.Success)
             {
                 TypeOf r = function_file.search_Type_Of(name, path);
-                //Если учетная запись админа или если создателю можно записывать, или если другим пользователям можно записывать
-                if ((Main.Sess.user_name == "admin") ||
-                    ((r.attributes.di_uid == Main.Sess.user_name) && (function_inode.rights_for_all(r)[1])) ||
-                    ((function_inode.rights_for_all(r)[3])))
-                {
-                    r.attributes.dimode.rights = rights;
+                //Если директория или файл найдены...
+                if(r.name != "") {
+                    //Если учетная запись админа или если создателю можно записывать, или если другим пользователям можно записывать
+                    if ((Main.Sess.user_name == "admin") ||
+                        ((r.attributes.di_uid == Main.Sess.user_name) && (function_inode.rights_for_all(r)[1])) ||
+                        ((function_inode.rights_for_all(r)[3])))
+                    {
+                        r.attributes.dimode.rights = rights;
+                    }
+                    else{
+                        Program.myForm.Log.Text += "У вас нет прав для изменения прав доступа!\n\n";
+                    }
                 }
-                else{
-                    Program.myForm.Log.Text += "У вас нет прав для изменения прав доступа!\n\n";
+                else
+                {
+                    Program.myForm.Log.Text += "Данной директории или файла не существует!\n\n";
                 }
             }
         }
@@ -113,8 +120,8 @@ namespace OC
                 w2 = matches.Groups["writing2"].Value.ToString();
                 if (r1 == "r") ret[0] = true;
                 if (w1 == "w") ret[1] = true;
-                if (r2 == "r") ret[0] = true;
-                if (w2 == "w") ret[1] = true;
+                if (r2 == "r") ret[2] = true;
+                if (w2 == "w") ret[3] = true;
             }
             return ret;
         }
