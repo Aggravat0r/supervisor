@@ -17,8 +17,9 @@ namespace OC
                 name = matches.Groups["login"].Value.ToString();
                 password = matches.Groups["password"].Value.ToString();
 
-                Boolean y = issetUser(name);
-                if (!y)
+                User user = getUser(name);
+                //Если такого пользователя еще нет...
+                if (user == null)
                 {
                     OC.User t = new OC.User();
                     t.user_id = Main.Sess.user_list.Count + 1;
@@ -26,11 +27,11 @@ namespace OC
                     t.password = password;
                     Main.Sess.user_list.Add(t);
                     Serializing_User.Ser(Main.Sess.user_list);
-                    Program.myForm.Log.Text += "Пользователь внесен в базу!\n";
+                    Program.myForm.Log.Text += "Пользователь внесен в базу!\n\n";
                 }
                 else
                 {
-                    Program.myForm.Log.Text += "Пользователь уже существует!\n";
+                    Program.myForm.Log.Text += "Пользователь уже существует!\n\n";
                 }
             }
             else
@@ -47,16 +48,10 @@ namespace OC
             {
                 name = matches.Groups["login"].Value.ToString();
 
-                Boolean y = issetUser(name);
-                if (y)
+                User user = getUser(name);
+                if (user != null)
                 {
-                    for (int i = 0; i < Main.Sess.user_list.Count; i++)
-                    {
-                        if (Main.Sess.user_list[i].user_name == name)
-                        {
-                            Main.Sess.user_list.RemoveAt(i);
-                        }
-                    }
+                    Main.Sess.user_list.Remove(user);
                     Serializing_User.Ser(Main.Sess.user_list);
                     Program.myForm.Log.Text += "Пользователь удален!\n\n";
                 }
@@ -86,23 +81,20 @@ namespace OC
                 password = matches.Groups["password"].Value.ToString();
                 newpassword = matches.Groups["newpassword"].Value.ToString();
 
-                Boolean y = issetUser(name);
-                if (y)
+                User user = getUser(name);
+                if (user != null)
                 {
-                    for (int i = 0; i < Main.Sess.user_list.Count; i++)
+                    //Если пользователь есть и пароли совпадают
+                    if (user.password == password)
                     {
-                        //Если пользователь есть и пароли совпадают
-                        if ((Main.Sess.user_list[i].user_name == name) && (Main.Sess.user_list[i].password == password))
-                        {
-                            Main.Sess.user_list[i].password = newpassword;
-                            Serializing_User.Ser(Main.Sess.user_list);
-                            Program.myForm.Log.Text += "Пароль изменен!\n\n";
-                        }
-                        else if ((Main.Sess.user_list[i].user_name == name) && (Main.Sess.user_list[i].password != password))
-                        {
-                            Program.myForm.Log.Text += "Неверный пароль!\n\n";
-                        }
-                    } 
+                        user.password = newpassword;
+                        Serializing_User.Ser(Main.Sess.user_list);
+                        Program.myForm.Log.Text += "Пароль изменен!\n\n";
+                    }
+                    else
+                    {
+                        Program.myForm.Log.Text += "Неверный пароль!\n\n";
+                    }
                 }
                 else
                 {
@@ -127,16 +119,16 @@ namespace OC
             Program.myForm.Log.Text += "Работа пользователя " + name + " завершена!\n\n";
 
         }
-        public static Boolean issetUser(string name)
+        public static User getUser(string name)
         {
             for (int i = 0; i < Main.Sess.user_list.Count; i++)
             {
                 if ((Main.Sess.user_list[i].user_name == name))
                 {
-                    return true;
+                    return Main.Sess.user_list[i];
                 }
             }
-            return false;
+            return null;
         }
     }
 }
