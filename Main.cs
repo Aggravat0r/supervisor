@@ -385,14 +385,14 @@ namespace OC
         public void mount()
         {
             Program.myForm.Log.Text += "Начало монтирования системы\n";
-            CountBlocks = (int)(StartMemoryHDD / Blocks_HDD); //вычисление колчиества блоков
-            inode_count = Blocks_HDD / Inode_Memory; //вчисление количества инодов
-            Program.myForm.Log.Text += "Количество памяти в байтах=" + StartMemoryHDD + "\n";
-            Program.myForm.Log.Text += "Размер блока=" + Blocks_HDD + " байт\n";
-            Program.myForm.Log.Text += "Размер inode=" + Inode_Memory + " байт\n\n";
-            Program.myForm.Log.Text += "Количество созданных блоков=" + CountBlocks + "\n";
-            Program.myForm.Log.Text += "Количество inode в блоках=" + inode_count + "\n";
-            Program.myForm.Log.Text += "Размер одного кластера " + claster + "\n\n";
+            CountBlocks = (int)(StartMemoryHDD / Blocks_HDD); //Вычисление количества блоков
+            inode_count = Blocks_HDD / Inode_Memory; //Вычисление количества инодов
+            Program.myForm.Log.Text += "Количество памяти в байтах: " + StartMemoryHDD + "\n";
+            Program.myForm.Log.Text += "Размер блока: " + Blocks_HDD + " байт\n";
+            Program.myForm.Log.Text += "Размер inode: " + Inode_Memory + " байт\n\n";
+            Program.myForm.Log.Text += "Количество созданных блоков: " + CountBlocks + "\n";
+            Program.myForm.Log.Text += "Количество inode в блоках: " + inode_count + "\n";
+            Program.myForm.Log.Text += "Размер одного кластера: " + claster + "\n\n";
 
             List<Block> Blocks = new List<Block>(CountBlocks);
             for (int i = 0; i < CountBlocks; i++)
