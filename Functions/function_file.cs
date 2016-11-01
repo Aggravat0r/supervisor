@@ -321,33 +321,46 @@ namespace OC
             string t = ""; //результирующая строка
             file f = new file(); //нужный файл
             f = search_file_retf(dir, path);//поиск нужного файла
-            //Если учетная запись админа или если создателю можно просматривать, или если другим пользователям можно просматривать
-            if ((Main.Sess.user_name == "admin") ||
-                ((f.attributes.di_uid == Main.Sess.user_name) && (function_inode.rights_for_all(f)[0])) ||
-                ((function_inode.rights_for_all(f)[2])))
-            {
-                int i = 0;
-                while ((f.attributes.di_addr[i] != 0) || (f.attributes.di_addr.Count() < i))
+            //Еси нашли файл
+            if(f.name != "") {
+                //Если учетная запись админа или если создателю можно просматривать, или если другим пользователям можно просматривать
+                if ((Main.Sess.user_name == "admin") ||
+                    ((f.attributes.di_uid == Main.Sess.user_name) && (function_inode.rights_for_all(f)[0])) ||
+                    ((function_inode.rights_for_all(f)[2])))
                 {
-                    t += function_inode.ClusterData(f.attributes.di_addr[i]);
-                    i++;
+                    int i = 0;
+                    while ((f.attributes.di_addr[i] != 0) || (f.attributes.di_addr.Count() < i))
+                    {
+                        t += function_inode.ClusterData(f.attributes.di_addr[i]);
+                        i++;
+                    }
                 }
+                else
+                {
+                    t += Program.myForm.Log.Text += "Вам не разрешено просматривать этот файл. \nВы не являетесь владельцем данного файла.";
+                }
+                return t;
             }
             else
             {
-                t += Program.myForm.Log.Text += "Вам не разрешено просматривать этот файл. \nВы не являетесь владельцем данного файла.";
+                return "Указанного файла не существует!";
             }
-            return t;
-
         }
 
         public static string attr(string dir, string path)
         {
             TypeOf t = search_Type_Of(dir, path);
             string res = string.Empty;
-            res += "Имя файла: " + t.name + "\nТип: " + t.attributes.dimode.type + "\nРазмер: " + t.attributes.di_size + "\nВладелец: " + t.attributes.di_uid;
-            res += "\nСоздан: " + t.attributes.di_ctime + "\nИзменен: " + t.attributes.di_mtime + "\nПрава: " + t.attributes.dimode.rights + "\n\n";
-
+            //Если файл найден...
+            if (t.name != "")
+            {
+                res += "Имя файла: " + t.name + "\nТип: " + t.attributes.dimode.type + "\nРазмер: " + t.attributes.di_size + "\nВладелец: " + t.attributes.di_uid;
+                res += "\nСоздан: " + t.attributes.di_ctime + "\nИзменен: " + t.attributes.di_mtime + "\nПрава: " + t.attributes.dimode.rights + "\n\n";
+            }
+            else
+            {
+                res = "Файла с таким именем не существует!\n\n";
+            }
             return res;
         }
 
