@@ -541,7 +541,7 @@ namespace OC
 
     }
     
-    public class inode //информация о файле
+    public class inode //информационный узел (информация о файле)
     {
         public int inode_number; // идентификатор инода
         public di_mode /*string*/ dimode; //аттрибуты файла
