@@ -23,7 +23,7 @@ namespace OC
             f.attributes.dimode.rights = "rw---";
 
             //Если директории с таким именем еще нет, то создаем, иначе оповещаем пользователя
-            if (function_dir.Search_folder(name, path) == "root/")
+            if (function_dir.Search_folder(name, path) == Main.Sess.path)
             {
                 // cоздание папки по пути
                 string[] path_l = path.Split('/');

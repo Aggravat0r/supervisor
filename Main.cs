@@ -115,7 +115,7 @@ namespace OC
                                         }
                                         break;
                                     }
-                                case "delete_user":
+                                case "del_user":
                                     {
                                         if (Main.Sess.user_name == "admin")
                                         {
